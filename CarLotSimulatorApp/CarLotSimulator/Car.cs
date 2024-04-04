@@ -24,5 +24,15 @@ namespace CarLotSimulator
         {
             Console.WriteLine("Toot toot");
         }
+
+        public static class CarLot
+        {
+            public static int numberOfCars = 0;
+        }
+
+        public Car()
+        {
+            CarLot.numberOfCars++;
+        }
     }
 }
